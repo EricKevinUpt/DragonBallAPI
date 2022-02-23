@@ -12,7 +12,7 @@ class DragonBallController extends Controller
     {
         $data = [
             'character' => 'Se ingresa mediante /api/character y devuelve un json con el nombre de los personaje',
-            'sagas' => 'Se ingresa mediante /api/sagas y devuelve un json con el nombre de las sagas',
+            'saga' => 'Se ingresa mediante /api/sagas y devuelve un json con el nombre de las sagas',
             'Buscar personaje' => 'Se ingresa mediante /api/character/{id} y devuelve un json con el nombre del personaje',
             'Buscar saga' => 'Se ingresa mediante /api/saga/{id} y devuelve un json con el nombre de la saga',
         ];

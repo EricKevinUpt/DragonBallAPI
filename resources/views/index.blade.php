@@ -89,7 +89,7 @@
           <h2>Use of API</h2>
           <p class="lead">The next steps is to the correct use of the API Dragon Ball:</p>
           <ol>
-            <li>In your browser write <code>https://dragon-ball.heroku.com/api</code></li>
+            <li>In your browser write <code>https://api-dragonball.herokuapp.com/api</code></li>
             <li>When entering it will show the following <b>JSON</b> document
             <ul>
 			        <pre>
