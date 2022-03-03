@@ -8,6 +8,11 @@ use App\Models\Character;
 
 class DragonBallController extends Controller
 {
+    /**
+     * Function to show the principal options of the API
+     * 
+     * @return Response json
+     */
     public function index()
     {
         $data = [
@@ -18,20 +23,36 @@ class DragonBallController extends Controller
         ];
         return response()->json($data, 200, [], JSON_PRETTY_PRINT);
     }
+
+    /**
+     * Function to show the characters
+     * 
+     * @return Response json
+     */
     public function character(){
         // obtener el id name description y avatar de cada personaje
         $characters = Character::all();
         return response()->json($characters, 200, [], JSON_PRETTY_PRINT);
     }
-
+    /** 
+     * Function to show the sagas
+     * 
+     * @return Response json
+     */
     public function saga(){
         // obtener el id name description e imagen de cada Saga
         $sagas = Saga::all();
         return response()->json($sagas, 200, [], JSON_PRETTY_PRINT);
     }
 
-    //buscar un personaje por id
+    /** 
+     * Function to show the characters by id
+     * 
+     * @param int $id
+     * @return Response json
+     */
     public function findCharacter($id){
+        //buscar un personaje por id
         $character = Character::find($id);
         if(!$character){
             return response()->json(['mensaje' => 'No se encontro el personaje'], 404);
@@ -39,8 +60,14 @@ class DragonBallController extends Controller
         return response()->json($character, 200, [], JSON_PRETTY_PRINT);
     }
 
-    //buscar una saga por id
+    /** 
+     * Function to show the sagas by id
+     * 
+     * @param int $id
+     * @return Response json
+     */
     public function findSaga($id){
+        //buscar una saga por id
         $saga = Saga::find($id);
         if(!$saga){
             return response()->json(['mensaje' => 'No se encontro la saga'], 404);
