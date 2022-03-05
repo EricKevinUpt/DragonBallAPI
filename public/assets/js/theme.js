@@ -135,11 +135,6 @@ $(this).magnificPopup({
 hljs.initHighlightingOnLoad();
 
 
-/*------------------------
-   tooltips
--------------------------- */
-$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
-
 
 /*------------------------
    Scroll to top

@@ -12,7 +12,7 @@
 <!-- Stylesheet
 ============================== -->
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- Font Awesome Icon -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
 <!-- Magnific Popup -->
@@ -237,8 +237,8 @@
 
 <!-- JavaScript
 ============================ -->
-<script src="assets/vendor/jquery/jquery.min.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- Highlight JS -->
 <script src="assets/vendor/highlight.js/highlight.min.js"></script> 
 <!-- Easing --> 
